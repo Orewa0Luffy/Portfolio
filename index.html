@@ -2,81 +2,100 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Yash Pacholi | Gear 5 Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Background Video + Sound -->
-  <video autoplay muted loop id="bg-video">
-    <source src="https://cdn.pixabay.com/video/2023/10/11/186857-873082733_large.mp4" type="video/mp4">
-  </video>
-  <audio id="themeMusic" src="https://files.catbox.moe/tp7hi9.mp3"></audio>
-  <script>
-    document.body.addEventListener('click', () => {
-      document.getElementById('themeMusic').play();
-    });
-  </script>
+<div id="particles-js"></div>
+<video autoplay muted loop id="bg-video">
+  <source src="https://cdn.pixabay.com/video/2023/10/11/186857-873082733_large.mp4" type="video/mp4">
+</video>
 
-  <header class="header">
-    <div class="container">
-      <img src="https://i.imgur.com/vH2ZkEw.png" alt="Luffy Avatar" class="avatar" />
-      <h1 class="name">Yash Pacholi</h1>
-      <p class="tagline">B.Tech CSE Student | Bot Developer | Anime Lover</p>
-      <div class="social-links">
-        <a href="https://github.com/Orewa0Luffy" target="_blank">GitHub</a>
-        <a href="https://t.me/Series_Union" target="_blank">Telegram</a>
-        <a href="https://instagram.com/yonko_yash" target="_blank">Instagram</a>
-      </div>
-    </div>
-  </header>
+<audio id="themeMusic" src="https://files.catbox.moe/tp7hi9.mp3"></audio>
+<script>
+  window.addEventListener('scroll', () => {
+    document.getElementById('themeMusic').play();
+  });
+</script>
 
-  <section class="about">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>I'm Yash Pacholi — a B.Tech CSE student with a passion for code, creativity, and all things anime. I build Telegram bots, explore web tech, and run a growing web series channel. Always leveling up like a true shonen protagonist!</p>
+<header class="header">
+  <div class="container">
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="anime.html">Anime I Watched</a>
+      <a href="series.html">Series I Watched</a>
+    </nav>
+    <div class="floating-luffy-container">
+      <img src="https://i.ibb.co/9qhGDx3/luffy-gear5-banner.jpg" class="floating-luffy" alt="Luffy Gear 5 Banner"/>
     </div>
-  </section>
+    <h1 class="name">Yash Pacholi</h1>
+    <p class="tagline">B.Tech CSE | Bot Dev | Anime Lover</p>
+    <div class="social-links">
+      <a href="https://github.com/Orewa0Luffy" target="_blank">GitHub</a>
+      <a href="https://t.me/Series_Union" target="_blank">Telegram</a>
+      <a href="https://instagram.com/yonko_yash" target="_blank">Instagram</a>
+    </div>
+  </div>
+</header>
 
-  <section class="projects">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="project-grid">
-        <div class="project-card">
-          <h3>Telegram Auto Anime Bot</h3>
-          <p>Automated bot that fetches and uploads anime episodes via Telegram.</p>
-        </div>
-        <div class="project-card">
-          <h3>Series Union Channel</h3>
-          <p>Web series channel featuring curated content for anime and drama lovers.</p>
-        </div>
-        <div class="project-card">
-          <h3>Python 100 Days Challenge</h3>
-          <p>Learning Python step-by-step and building cool automation tools.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+<section class="about container">
+  <h2>About Me</h2>
+  <p>I'm Yash Pacholi — a B.Tech CSE student with a passion for code, creativity, and all things anime. I build Telegram bots, explore web tech, and run a growing web series channel. Always leveling up like a true shonen protagonist!</p>
+</section>
 
-  <section class="contact">
-    <div class="container">
-      <h2>Contact</h2>
-      <p>Want to connect or collaborate? Ping me anytime:</p>
-      <div class="social-links">
-        <a href="https://github.com/Orewa0Luffy" target="_blank">GitHub</a>
-        <a href="https://t.me/Series_Union" target="_blank">Telegram</a>
-        <a href="https://instagram.com/yonko_yash" target="_blank">Instagram</a>
-      </div>
+<section class="projects container">
+  <h2>Projects</h2>
+  <div class="project-grid">
+    <div class="project-card">
+      <h3>Auto Anime Bot</h3>
+      <p>Telegram bot that auto uploads anime from feeds. Fully automated with Python + Pyrogram.</p>
     </div>
-  </section>
+    <div class="project-card">
+      <h3>Series Union Channel</h3>
+      <p>Web series channel for trending anime and dramas on Telegram.</p>
+    </div>
+    <div class="project-card">
+      <h3>Python Challenge</h3>
+      <p>100 Days of Code: Python projects from beginner to advanced.</p>
+    </div>
+  </div>
+</section>
 
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2025 Yash Pacholi. All rights reserved. Made with ❤️ + Gear 5 Vibes.</p>
-    </div>
-  </footer>
+<section class="contact container">
+  <h2>Contact Me</h2>
+  <p>Ping me anytime if you want to collaborate or chat:</p>
+  <div class="social-links">
+    <a href="https://github.com/Orewa0Luffy">GitHub</a>
+    <a href="https://t.me/Series_Union">Telegram</a>
+    <a href="https://instagram.com/yonko_yash">Instagram</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>&copy; 2025 Yash Pacholi. Powered by Gear 5 and Web Dev 💀</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script>
+particlesJS("particles-js", {
+  particles: {
+    number: { value: 80 },
+    color: { value: "#ffffff" },
+    shape: { type: "circle" },
+    opacity: { value: 0.5 },
+    size: { value: 3 },
+    move: { speed: 1.5 }
+  },
+  interactivity: {
+    events: {
+      onhover: { enable: true, mode: "repulse" }
+    }
+  }
+});
+</script>
 
 </body>
 </html>
