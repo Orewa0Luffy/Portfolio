@@ -1,12 +1,25 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yash Pacholi | Portfolio</title>
+  <title>Yash Pacholi | Gear 5 Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
+
+  <!-- Background Video + Sound -->
+  <video autoplay muted loop id="bg-video">
+    <source src="https://cdn.pixabay.com/video/2023/10/11/186857-873082733_large.mp4" type="video/mp4">
+  </video>
+  <audio id="themeMusic" src="https://files.catbox.moe/tp7hi9.mp3"></audio>
+  <script>
+    document.body.addEventListener('click', () => {
+      document.getElementById('themeMusic').play();
+    });
+  </script>
+
   <header class="header">
     <div class="container">
       <img src="https://i.imgur.com/vH2ZkEw.png" alt="Luffy Avatar" class="avatar" />
@@ -18,12 +31,16 @@
         <a href="https://instagram.com/yonko_yash" target="_blank">Instagram</a>
       </div>
     </div>
-  </header>  <section class="about">
+  </header>
+
+  <section class="about">
     <div class="container">
       <h2>About Me</h2>
       <p>I'm Yash Pacholi — a B.Tech CSE student with a passion for code, creativity, and all things anime. I build Telegram bots, explore web tech, and run a growing web series channel. Always leveling up like a true shonen protagonist!</p>
     </div>
-  </section>  <section class="projects">
+  </section>
+
+  <section class="projects">
     <div class="container">
       <h2>Projects</h2>
       <div class="project-grid">
@@ -41,7 +58,9 @@
         </div>
       </div>
     </div>
-  </section>  <section class="contact">
+  </section>
+
+  <section class="contact">
     <div class="container">
       <h2>Contact</h2>
       <p>Want to connect or collaborate? Ping me anytime:</p>
@@ -51,9 +70,13 @@
         <a href="https://instagram.com/yonko_yash" target="_blank">Instagram</a>
       </div>
     </div>
-  </section>  <footer class="footer">
+  </section>
+
+  <footer class="footer">
     <div class="container">
-      <p>&copy; 2025 Yash Pacholi. All rights reserved. Made with ❤️ + Anime Vibes.</p>
+      <p>&copy; 2025 Yash Pacholi. All rights reserved. Made with ❤️ + Gear 5 Vibes.</p>
     </div>
-  </footer></body>
+  </footer>
+
+</body>
 </html>
