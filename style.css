@@ -98,3 +98,33 @@ footer {
   color: #888;
   font-size: 0.9rem;
 }
+
+.anime-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.anime-card {
+  background: #111;
+  border: 2px solid #00ffff;
+  border-radius: 15px;
+  width: 300px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 0 15px #00ffff44;
+  transition: transform 0.3s ease;
+}
+
+.anime-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #00ffffaa;
+}
+
+.anime-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
