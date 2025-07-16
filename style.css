@@ -1,130 +1,143 @@
-/** style.css - Anime Portfolio Theme */
+/* Neon Anime Style */
 
 body {
   margin: 0;
   padding: 0;
-  background: radial-gradient(#0a0a0a, #000000);
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #000000, #0a0a1f);
   color: #ffffff;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   overflow-x: hidden;
 }
 
-header {
-  text-align: center;
-  padding: 2rem 1rem;
-  background: rgba(0, 0, 0, 0.7);
-  border-bottom: 2px solid #00ffff;
+#preloader {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
 }
 
-nav {
-  margin-top: 1rem;
-}
-
-nav a {
+.loader-text {
+  font-size: 2rem;
   color: #00ffff;
-  text-decoration: none;
-  margin: 0 15px;
-  font-weight: bold;
-  font-size: 1.1rem;
-  transition: color 0.3s ease;
+  animation: pulse 1s infinite;
 }
 
-nav a:hover {
-  color: #ffffff;
+@keyframes pulse {
+  0% { opacity: 0.3; }
+  50% { opacity: 1; }
+  100% { opacity: 0.3; }
 }
 
 .hero {
   text-align: center;
-  padding: 2rem;
-  background: url('https://wallpaperaccess.com/full/3612119.jpg') no-repeat center center/cover;
+  padding: 3rem 1rem;
+  background: url('https://i.imgur.com/6yT0CnA.jpg') no-repeat center center/cover;
   min-height: 100vh;
-  position: relative;
+  box-shadow: inset 0 0 100px #000;
 }
 
-.profile {
-  width: 300px;
-  border-radius: 20px;
-  box-shadow: 0 0 20px #00ffff;
-  animation: float 5s ease-in-out infinite;
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #00ffff;
+  text-shadow: 0 0 10px #00ffff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: rgba(0,0,0,0.6);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #00ffff;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 8px #00ffff;
+}
+
+.profile-img {
+  width: 180px;
+  border-radius: 50%;
+  margin-top: 1rem;
+  box-shadow: 0 0 25px #00ffff;
+  animation: float 4s ease-in-out infinite;
 }
 
 @keyframes float {
   0% { transform: translateY(0); }
-  50% { transform: translateY(-15px); }
+  50% { transform: translateY(-20px); }
   100% { transform: translateY(0); }
 }
 
 .intro {
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 2rem;
-  margin: 2rem auto;
-  max-width: 800px;
-  border-radius: 20px;
-  box-shadow: 0 0 30px #00ffff99;
+  margin-top: 1rem;
+  color: #ffffff;
+  text-shadow: 0 0 10px #00ffff88;
 }
 
 .intro h2 {
+  font-size: 2rem;
+  margin-top: 0.5rem;
   color: #00ffff;
-  margin-bottom: 1rem;
 }
 
-.intro p {
-  line-height: 1.6;
-  font-size: 1.1rem;
+.socials {
+  margin-top: 1rem;
 }
 
 .socials a {
-  display: inline-block;
-  margin: 0.5rem 1rem;
-  padding: 0.5rem 1rem;
-  background: #00ffff33;
-  border: 2px solid #00ffff;
-  border-radius: 10px;
-  color: #ffffff;
-  text-decoration: none;
-  transition: all 0.3s ease;
+  font-size: 1.8rem;
+  color: #00ffff;
+  margin: 0 10px;
+  transition: 0.3s;
 }
 
 .socials a:hover {
-  background: #00ffff;
-  color: #000;
-  box-shadow: 0 0 15px #00ffff99;
+  color: #ffffff;
+  text-shadow: 0 0 10px #00ffff;
+}
+
+.about {
+  padding: 2rem;
+  background: #111;
+  text-align: center;
+  box-shadow: inset 0 0 50px #00ffff33;
+}
+
+.about h2 {
+  color: #00ffff;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
 }
 
 footer {
-  text-align: center;
+  background: #000;
   padding: 1rem;
-  background: #000000aa;
-  color: #888;
+  text-align: center;
   font-size: 0.9rem;
-}
-
-.anime-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.anime-card {
-  background: #111;
-  border: 2px solid #00ffff;
-  border-radius: 15px;
-  width: 300px;
-  padding: 1rem;
-  text-align: center;
-  box-shadow: 0 0 15px #00ffff44;
-  transition: transform 0.3s ease;
-}
-
-.anime-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 25px #00ffffaa;
-}
-
-.anime-card img {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 1rem;
+  color: #888;
 }
