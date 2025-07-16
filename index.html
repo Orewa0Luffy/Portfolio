@@ -3,99 +3,39 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Yash Pacholi | Gear 5 Portfolio</title>
-  <link rel="stylesheet" href="style.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <title>Yash Pacholi</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Background Music -->
+  <audio autoplay loop id="bg-music">
+    <source src="https://files.catbox.moe/tp7hi9.mp3" type="audio/mpeg">
+    Your browser does not support audio.
+  </audio>
 
-<div id="particles-js"></div>
-<video autoplay muted loop id="bg-video">
-  <source src="https://cdn.pixabay.com/video/2023/10/11/186857-873082733_large.mp4" type="video/mp4">
-</video>
+  <div class="hero">
+    <header>
+      <h1>Yash Pacholi</h1>
+      <p>B.Tech CSE | Bot Developer | Anime Lover</p>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="anime.html">Anime I Watched</a>
+        <a href="characters.html">Favorite Characters</a>
+      </nav>
+    </header>
 
-<audio id="themeMusic" src="https://files.catbox.moe/tp7hi9.mp3"></audio>
-<script>
-  window.addEventListener('scroll', () => {
-    document.getElementById('themeMusic').play();
-  });
-</script>
-
-<header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a href="index.html">Home</a>
-      <a href="anime.html">Anime I Watched</a>
-      <a href="series.html">Series I Watched</a>
-    </nav>
-    <div class="floating-luffy-container">
-      <img src="https://i.ibb.co/9qhGDx3/luffy-gear5-banner.jpg" class="floating-luffy" alt="Luffy Gear 5 Banner"/>
-    </div>
-    <h1 class="name">Yash Pacholi</h1>
-    <p class="tagline">B.Tech CSE | Bot Dev | Anime Lover</p>
-    <div class="social-links">
-      <a href="https://github.com/Orewa0Luffy" target="_blank">GitHub</a>
-      <a href="https://t.me/Series_Union" target="_blank">Telegram</a>
-      <a href="https://instagram.com/yonko_yash" target="_blank">Instagram</a>
-    </div>
+    <section class="intro">
+      <img src="https://upload.wikimedia.org/wikipedia/en/5/50/Luffy_Gear_5.png" class="profile" alt="Luffy"/>
+      <h2>About Me</h2>
+      <p>I'm Yash Pacholi – a B.Tech CSE student with a passion for code, creativity, and all things anime. I build Telegram bots, explore web tech, and run a growing web series channel. Always leveling up like a true shonen protagonist!</p>
+      <div class="socials">
+        <a href="https://github.com/Orewa0Luffy" target="_blank">GitHub</a>
+        <a href="https://t.me/Series_Union" target="_blank">Telegram</a>
+        <a href="https://instagram.com/yonko_yash" target="_blank">Instagram</a>
+      </div>
+    </section>
   </div>
-</header>
 
-<section class="about container">
-  <h2>About Me</h2>
-  <p>I'm Yash Pacholi — a B.Tech CSE student with a passion for code, creativity, and all things anime. I build Telegram bots, explore web tech, and run a growing web series channel. Always leveling up like a true shonen protagonist!</p>
-</section>
-
-<section class="projects container">
-  <h2>Projects</h2>
-  <div class="project-grid">
-    <div class="project-card">
-      <h3>Auto Anime Bot</h3>
-      <p>Telegram bot that auto uploads anime from feeds. Fully automated with Python + Pyrogram.</p>
-    </div>
-    <div class="project-card">
-      <h3>Series Union Channel</h3>
-      <p>Web series channel for trending anime and dramas on Telegram.</p>
-    </div>
-    <div class="project-card">
-      <h3>Python Challenge</h3>
-      <p>100 Days of Code: Python projects from beginner to advanced.</p>
-    </div>
-  </div>
-</section>
-
-<section class="contact container">
-  <h2>Contact Me</h2>
-  <p>Ping me anytime if you want to collaborate or chat:</p>
-  <div class="social-links">
-    <a href="https://github.com/Orewa0Luffy">GitHub</a>
-    <a href="https://t.me/Series_Union">Telegram</a>
-    <a href="https://instagram.com/yonko_yash">Instagram</a>
-  </div>
-</section>
-
-<footer class="footer">
-  <p>&copy; 2025 Yash Pacholi. Powered by Gear 5 and Web Dev 💀</p>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-<script>
-particlesJS("particles-js", {
-  particles: {
-    number: { value: 80 },
-    color: { value: "#ffffff" },
-    shape: { type: "circle" },
-    opacity: { value: 0.5 },
-    size: { value: 3 },
-    move: { speed: 1.5 }
-  },
-  interactivity: {
-    events: {
-      onhover: { enable: true, mode: "repulse" }
-    }
-  }
-});
-</script>
-
+  <script src="js/script.js"></script>
 </body>
 </html>
